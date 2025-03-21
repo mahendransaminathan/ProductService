@@ -23,7 +23,8 @@ namespace ProductService.Providers
         
         public async Task<Product> GetProduct(int id)
         {
-            return await _products.Find(p => p.Id == id).FirstOrDefaultAsync();
+            var objectId = new MongoDB.Bson.ObjectId(id.ToString("x24"));
+            return await _products.Find(p => p.Id == objectId).FirstOrDefaultAsync();
         }
 
         // Create a product
@@ -42,7 +43,7 @@ namespace ProductService.Providers
         {
             if (int.TryParse(id, out int parsedId))
             {
-                product.Id = parsedId;
+                product.Id = new MongoDB.Bson.ObjectId(parsedId.ToString("x24"));
                 await UpdateProduct(product);
             }
         }
@@ -58,7 +59,8 @@ namespace ProductService.Providers
 
         public async Task DeleteProduct(int id)
         {
-            await _products.DeleteOneAsync(p => p.Id == id);
+            var objectId = new MongoDB.Bson.ObjectId(id.ToString("x24"));
+            await _products.DeleteOneAsync(p => p.Id == objectId);
         }
         
 

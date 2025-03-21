@@ -38,7 +38,7 @@ namespace ProductService.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduct(int id, Product product)
         {
-            if (id != product.Id)
+            if (id.ToString() != product.Id.ToString())
             {
                 return BadRequest();
             }

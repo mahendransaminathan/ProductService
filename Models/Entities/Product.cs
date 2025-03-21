@@ -10,7 +10,7 @@ namespace ProductService.Models.Entities
         
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public int Id { get; set; }
+        public ObjectId Id { get; set; }
         [BsonElement("productName")]
         public required string ProductName { get; set; }
 
