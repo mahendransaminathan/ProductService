@@ -1,54 +1,56 @@
 
-using System.Text.Json.Serialization;
-using Newtonsoft.Json;
+
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace ProductService.Models.Entities
 {
     public class Product
     {
         
-        [JsonProperty("id")]
+        [BsonId]
+        [BsonRepresentation(BsonType.ObjectId)]
         public int Id { get; set; }
-        [JsonProperty("productName")]
+        [BsonElement("productName")]
         public required string ProductName { get; set; }
 
-        [JsonProperty("companyName")]
+        [BsonElement("companyName")]
         public required string CompanyName { get; set; }
 
-        [JsonProperty("category")]
+        [BsonElement("category")]
         public required string Category { get; set; }
 
-        [JsonProperty("licenseType")]
+        [BsonElement("licenseType")]
         public required string LicenseType { get; set; }
         
-        [JsonProperty("price")]
+        [BsonElement("price")]
         public decimal Price { get; set; }
 
-        [JsonProperty("currency")]
-        public required string currency { get; set; }
+        [BsonElement("currency")]
+        public required string Currency { get; set; }
 
-        [JsonProperty("quantity")]
-        public required decimal quantity { get; set; }
+        [BsonElement("quantity")]
+        public required decimal Quantity { get; set; }
 
-        [JsonProperty("supplier")]
-        public required string supplier { get; set; }
+        [BsonElement("supplier")]
+        public required string Supplier { get; set; }
 
-        [JsonProperty("availabilityStatus")]
+        [BsonElement("availabilityStatus")]
         public required bool AvailabilityStatus { get; set; }
 
-        [JsonProperty("deliveryOptions")]
+        [BsonElement("deliveryOptions")]
         public required string DeliveryOptions { get; set; }
 
-        [JsonProperty("brandName")]
+        [BsonElement("brandName")]
         public required string BrandName { get; set; }
 
-        [JsonProperty("modelnumber")]
+        [BsonElement("modelnumber")]
         public required decimal ModelNumber { get; set; }
 
-        [JsonProperty("discount")]
+        [BsonElement("discount")]
         public required decimal Discount { get; set; }
 
-        [JsonProperty("countryoforigin")]
+        [BsonElement("countryOfOrigin")]
         public required string CountryOfOrigin { get; set; }    
     }
 }

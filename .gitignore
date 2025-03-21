@@ -1,0 +1,9 @@
+/build
+/obj/*
+/bin
+[oO]bj/*
+[Bb]in/*
+/bin/*
+/obj/*
+/bin/Debug
+/bin/Debug/*
