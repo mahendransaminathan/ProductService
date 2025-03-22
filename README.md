@@ -56,4 +56,9 @@ Follow the below steps to create Azure App Service for backend
 
 # Create Connection string in your ProductService  
 1. Go to your Product Service App Service  
-2. 
+2. Under settings section on the left side of the screen, Click Environment Variables section
+3. Click on +Add button
+4. Under Name* section, Enter the name as MONGODB_CONNECTION_STRING
+5. Under the value section, copy the connection string value from your notepad and paste it here
+6. Click on Apply button at the button of the screen to save the changes
+   
