@@ -34,3 +34,26 @@ Follow the below steps to create Azure App Service for backend
 • Select on Actions option and click on New Repository secret button.  
 • Provide a name to this secret example Azure_Publish_Profile and paste the service principle from notepad  
 • Click on Add Secret button  
+
+# Creating MongoDB account
+1. Create a MongoDB Account by following the steps  
+2. Enter the link in the browser  https://www.mongodb.com/cloud/atlas/register  
+3. Enter First Name, Last Name, Email ID & Password and click on Create your Atlas account button  
+4. Your will receive an email link in your email account.  
+5. Click on the link from your Email account. It will take to your MongoDB Login  
+6. Enter your email ID and password to login into your MongoDB account  
+7. Under Overview section, click on Create Clusters button to create a cluster  
+8. Select your cluster  
+9. Click on +Create button to create your DB  
+10. Enter Database name under Databanse name section  
+11. Enter Collection name under collection name section  
+12. Select Clustered Index collection under Additional Preferences section  
+13. Click on Create button to create the database  
+14. Select Overview section under your cluster  
+15. Click on Connect button to copy the Connection string  
+16. Connect to Cluster window pop up  
+17. Under Connection string section, click on copy button and paste the connection string to your notepad  
+
+# Create Connection string in your ProductService  
+1. Go to your Product Service App Service  
+2. 
