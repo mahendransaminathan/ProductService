@@ -34,6 +34,7 @@ if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
 }
+app.UseCors("AllowLocalhost"); // Apply the CORS policy
 
 app.UseHttpsRedirection();
 
