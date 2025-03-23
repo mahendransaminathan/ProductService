@@ -42,17 +42,22 @@ Follow the below steps to create Azure App Service for backend
 4. Your will receive an email link in your email account.  
 5. Click on the link from your Email account. It will take to your MongoDB Login  
 6. Enter your email ID and password to login into your MongoDB account  
-7. Under Overview section, click on Create Clusters button to create a cluster  
-8. Select your cluster  
-9. Click on +Create button to create your DB  
-10. Enter Database name under Databanse name section  
-11. Enter Collection name under collection name section  
-12. Select Clustered Index collection under Additional Preferences section  
-13. Click on Create button to create the database  
-14. Select Overview section under your cluster  
-15. Click on Connect button to copy the Connection string  
-16. Connect to Cluster window pop up  
-17. Under Connection string section, click on copy button and paste the connection string to your notepad  
+7. Under Overview section, click on Create Clusters button to create a cluster
+8. Deploy your cluster window will open up  
+9. Select the Free tier option
+10. Under Name section, enter the name for your cluster and leave the remaining fields as default    
+11. Click on Create Deployment button at the bottom of the screen  
+12. Select your clusters option under Database at the left side of the screen
+13. Click on Browse collections option. It will take to collections tab     
+14. Click on + Create Database button to create your DB  
+15. Enter Database name under Database name section. Ex. ProductService    
+16. Enter Collection name under collection name section. Ex. Product    
+17. Select Clustered Index collection under Additional Preferences section  
+18. Click on Create button to create the database  
+19. Select Overview tab under your cluster  
+20. Click on Connect button to copy the Connection string  
+21. Connect to Cluster window pop up  
+22. Under Connection string section, click on copy button and paste the connection string to your notepad    
 
 # Create Connection string in your ProductService  
 1. Go to your Product Service App Service  
