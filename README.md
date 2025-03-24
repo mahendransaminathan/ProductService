@@ -42,17 +42,28 @@ Follow the below steps to create Azure App Service for backend
 4. Your will receive an email link in your email account.  
 5. Click on the link from your Email account. It will take to your MongoDB Login  
 6. Enter your email ID and password to login into your MongoDB account  
-7. Under Overview section, click on Create Clusters button to create a cluster  
-8. Select your cluster  
-9. Click on +Create button to create your DB  
-10. Enter Database name under Databanse name section  
-11. Enter Collection name under collection name section  
-12. Select Clustered Index collection under Additional Preferences section  
-13. Click on Create button to create the database  
-14. Select Overview section under your cluster  
-15. Click on Connect button to copy the Connection string  
-16. Connect to Cluster window pop up  
-17. Under Connection string section, click on copy button and paste the connection string to your notepad  
+7. Under Overview section, click on Create Clusters button to create a cluster
+8. Deploy your cluster window will open up  
+9. Select the Free tier option
+10. Under Name section, enter the name for your cluster and leave the remaining fields as default    
+11. Click on Create Deployment button at the bottom of the screen  
+12. Select your clusters option under Database at the left side of the screen
+13. Click on Browse collections option. It will take to collections tab     
+14. Click on + Create Database button to create your DB  
+15. Enter Database name under Database name section. Ex. ProductService    
+16. Enter Collection name under collection name section. Ex. Product    
+17. Select Clustered Index collection under Additional Preferences section  
+18. Click on Create button to create the database  
+19. Select Overview tab under your cluster  
+20. Click on Connect button to copy the Connection string  
+21. Connect to Cluster window pop up  
+22. Under Connection string section, click on copy button and paste the connection string to your notepad  
+23. Click on the Database Access Under Security section at the left side of the screen. Your username will be displayed   
+24. Click on Edit button under Actions section
+25. Edit User window will pop up.
+26. Under Password Authentication section, click on Edit Password button  
+27. Enter your password. Take a note of your password and save the changes
+28. In your notepad, Update the <db_password> with the password from the previous step in the connection String  
 
 # Create Connection string in your ProductService  
 1. Go to your Product Service App Service  
@@ -61,4 +72,5 @@ Follow the below steps to create Azure App Service for backend
 4. Under Name* section, Enter the name as MONGODB_CONNECTION_STRING
 5. Under the value section, copy the connection string value from your notepad and paste it here
 6. Click on Apply button at the button of the screen to save the changes
+7. Confirm button will pop up. click on Confirm button to save the changes  
    
